@@ -34,11 +34,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Final Product
 
-!["screenshot of home page overview"]()
+!["screenshot of home page overview"](https://github.com/maggiezhao11/jungle-rails/blob/master/docs/home_overview.png)
 
-!["screenshot of admin products page"]()
+!["screenshot of admin products page"](https://github.com/maggiezhao11/jungle-rails/blob/master/docs/admin_products_page.png)
 
-!["screenshot of empty cart page"]()
+!["screenshot of empty cart page"](https://github.com/maggiezhao11/jungle-rails/blob/master/docs/empty_cart_page.png)
 
 
 ## Function
