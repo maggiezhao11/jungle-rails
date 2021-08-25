@@ -1,9 +1,7 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
-
-  # SETUP
-  before :all do
+RSpec.feature "AddToCarts", type: :feature, js: true do
+  before :each do
     @category = Category.create! name: 'Apparel'
 
     10.times do |n|
@@ -17,20 +15,22 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     end
   end
 
-  scenario "They see a particular product details" do
+  scenario "They see My Cart (1)" do
 
     visit root_path
-    first(:link, "Details").click
-    page 
+    # first("Add").click_on
+    find("button", text: /Add/, match: :first).click
+    # page 
     
+ 
     # commented out b/c it's for debugging only
-    expect(page).to have_css 'section.products-show'
     save_and_open_screenshot
+
+    # need to use class name in the html to track the element
+    within('.nav.navbar-nav.navbar-right', match: :first) { expect(page).to have_content( 'My Cart (1)' )}
+
     
   end
 
 
 end
-
-
-
