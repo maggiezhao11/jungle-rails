@@ -32,5 +32,4 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     
   end
 
-
 end
