@@ -32,3 +32,19 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
+## Final Product
+
+!["screenshot of home page overview"]()
+
+!["screenshot of admin products page"]()
+
+!["screenshot of empty cart page"]()
+
+
+## Function
+- User can shop products on the site with provided credit card information.
+- Displays existing products in database
+- Displays SOLD OUT once the quantity is 0
+- User can sign up, login, logout on any pages of the website
+- Offer password security to protect the database
+- Authenticate Admin only to edit, delete products and categories.
